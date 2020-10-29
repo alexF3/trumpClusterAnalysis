@@ -241,7 +241,8 @@ try:
 
     polygons = polys
     boundary = gpd.GeoSeries(cascaded_union(polygons))
-# except:
+except:
+    print('openrouteservice failed')
 #     # if openrouteservice fails, go to mapbox
 #     firstPart = 'https://api.mapbox.com/isochrone/v1/mapbox/driving/'
 #     lastPart =  # input API key
